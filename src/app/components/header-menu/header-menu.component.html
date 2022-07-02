@@ -1,4 +1,6 @@
 <mat-toolbar>
-    <button mat-button *ngFor="let section of sections; let i = index">{{section.name}}</button>
+    <button mat-button *ngFor="let section of sections; let i = index" [routerLink]="[section.route]" routerLinkActive="active">
+        <mat-icon *ngIf="section.icon != ''">{{section.icon}}</mat-icon>
+        {{section.name}}
+    </button>
 </mat-toolbar>
-
