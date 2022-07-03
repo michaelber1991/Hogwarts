@@ -7,6 +7,8 @@ import { ComponentsModule } from './components/components.module';
 import { CharactersModule } from '@pages/characters/characters.module';
 import { HomeModule } from '@pages/home/home.module';
 import { HttpClientModule } from '@angular/common/http';
+import { StudentsModule } from '@pages/students/students.module';
+import { TeachersModule } from '@pages/teachers/teachers.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     ComponentsModule,
     HomeModule,
     CharactersModule,
+    StudentsModule,
+    TeachersModule,
     HttpClientModule
   ],
   providers: [],

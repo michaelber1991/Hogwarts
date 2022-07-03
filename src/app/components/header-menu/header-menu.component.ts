@@ -16,8 +16,8 @@ export class HeaderMenuComponent implements OnInit {
   sections: HeaderItems[] = [
     {name: '', route: '/home', icon:'home'},
     {name: 'Characters', route: '/characters', icon:''},
-    {name: 'Students', route: '', icon:''},
-    {name: 'Teachers', route: '', icon:''}
+    {name: 'Students', route: '/students', icon:''},
+    {name: 'Teachers', route: '/teachers', icon:''}
   ];
 
   constructor() { }

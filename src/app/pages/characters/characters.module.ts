@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CharactersComponent } from './characters.component';
 import { ComponentsModule } from '@components/components.module';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -11,7 +13,9 @@ import { ComponentsModule } from '@components/components.module';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    MatSelectModule,
+    FormsModule
   ],
   exports: [
     CharactersComponent

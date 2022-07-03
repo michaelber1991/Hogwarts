@@ -6,3 +6,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 //Variables 
 $section-container-padding: 1rem 1rem 0rem 1rem;
+
+
+// avoid deep to change!!
+.mat-form-field-appearance-fill .mat-form-field-flex{
+     background-color: #212121;
+}
