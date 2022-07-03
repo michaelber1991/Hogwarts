@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
 import { RequestformComponent } from '../requestform/requestform.component';
 
 interface RequestData {
-  title: string;
+  identification: string;
   message: string | null;
 }
 
@@ -36,7 +36,7 @@ export class RequestsComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result != undefined) {
-        localStorage.setItem(result.title, result.message);
+        localStorage.setItem(result.identification, result.message);
         this.updateStudents();
       }
     });
@@ -50,7 +50,7 @@ export class RequestsComponent implements OnInit {
   private retrieveLocalStorage(keys: string[]): RequestData[] {
     let localStorageData: RequestData[] = [];
     keys.forEach(key => {
-      localStorageData.push({ title: key, message: localStorage.getItem(key) })
+      localStorageData.push({ identification: key, message: localStorage.getItem(key) })
     });
     return localStorageData;
   }
