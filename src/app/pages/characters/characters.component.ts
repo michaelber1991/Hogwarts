@@ -24,6 +24,7 @@ export class CharactersComponent implements OnInit {
   ];
   refreshTableTrigger: BehaviorSubject<any> = new BehaviorSubject<any>(null);
   inputBasicReportTableComponent: InputModel<any> = new InputModel<any>();
+  selectedHouse = this.houses[0].value;
 
   constructor(public charactersServise: CharactersService) { }
 

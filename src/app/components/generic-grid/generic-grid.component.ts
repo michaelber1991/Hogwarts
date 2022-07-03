@@ -35,6 +35,10 @@ export class GenericGridComponent implements OnInit {
         this.columns = this.setHeaderColumns(data[0]);
         this.dataSource = new MatTableDataSource<any>(data);
         this.dataSource.paginator = this.paginator;
+      }else {
+        this.displayedColumns = [];
+        this.columns = [];
+        this.dataSource = new MatTableDataSource<any>([]);
       }
     });
   }

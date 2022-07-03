@@ -2,4 +2,7 @@
 
 .container{
     padding: $section-container-padding;
+    .filter-button{
+        margin-left: 1rem;
+    }
 }

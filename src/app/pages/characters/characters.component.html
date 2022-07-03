@@ -1,7 +1,7 @@
 <div class="container">
     <mat-form-field appearance="fill" >
         <mat-label>Select a house</mat-label>
-        <mat-select (selectionChange)="updateCharacters($event.value)">
+        <mat-select (selectionChange)="updateCharacters($event.value)" [(value)]="selectedHouse">
             <mat-option *ngFor="let house of houses" [value]="house.value">
                 {{house.viewValue}}
             </mat-option>

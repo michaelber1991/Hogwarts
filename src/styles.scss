@@ -16,5 +16,11 @@ $secondary-color-contrast: white;
 
 // avoid deep to change!!
 .mat-form-field-appearance-fill .mat-form-field-flex{
-     background-color: #212121;
+     background-color: $main-color;
+}
+
+
+.mat-form-field-appearance-outline .mat-form-field-flex{
+     background-color: $main-color ;
+     color: $main-color-contrast;
 }
