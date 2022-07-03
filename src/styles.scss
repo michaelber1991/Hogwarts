@@ -3,24 +3,24 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-
-//Variables 
+//#region Variables 
 $section-container-padding: 1rem 1rem 0rem 1rem;
 $main-color: #212121;
 $main-color-contrast: white;
 
 $secondary-color: #07589f;
 $secondary-color-contrast: white;
+//#endregion Variables 
 
-
-
-// avoid deep to change!!
-.mat-form-field-appearance-fill .mat-form-field-flex{
-     background-color: $main-color;
-}
-
-
-.mat-form-field-appearance-outline .mat-form-field-flex{
+//#region Teachers Module 
+.teachers-input .mat-form-field-appearance-outline .mat-form-field-flex{
      background-color: $main-color ;
      color: $main-color-contrast;
 }
+//#endregion Teachers Module 
+
+//#region  avoid deep to change!!
+.mat-form-field-appearance-fill .mat-form-field-flex{
+     background-color: $main-color;
+}
+//#endregion  avoid deep to change!!

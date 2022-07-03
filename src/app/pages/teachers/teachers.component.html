@@ -1,6 +1,6 @@
-<div class="container">
-    <form [formGroup]="form" (submit)="updateStudents()">
-        <mat-form-field class="form-field teachers-input" appearance="outline" color="primary">
+<div class="container" >
+    <form [formGroup]="form" (submit)="updateStudents()" class="teachers-input">
+        <mat-form-field class="form-field " appearance="outline" color="primary">
             <mat-label> Name
             </mat-label>
             <input matInput formControlName="name" required>
