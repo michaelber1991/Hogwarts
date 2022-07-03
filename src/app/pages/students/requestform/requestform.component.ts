@@ -10,7 +10,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class RequestformComponent implements OnInit {
 
   form: FormGroup = this.formBuilder.group({
-    title: [null, [Validators.required]],
+    identification: [null, [Validators.required]],
     message: [null, Validators.required]
   });
 

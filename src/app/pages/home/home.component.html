@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="container">
+    <h1 class="home-title">Welcome To Hogwarts</h1>
+    <mat-card class="example-card item-container" *ngFor="let card of cards">
+        <mat-card-title>{{card.title}}</mat-card-title>
+        <mat-card-content>
+          <p>{{card.info}}</p>
+        </mat-card-content>
+      </mat-card>
+</div>

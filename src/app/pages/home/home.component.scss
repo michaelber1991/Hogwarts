@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+.container{
+    padding: $section-container-padding;
+    display: flex;
+    flex-wrap: wrap;
+    .home-title{
+        width: 100%;
+        text-decoration: underline;
+        color: $main-color;
+    }
+    .item-container{
+        width: 20%;
+        margin-right: 1rem;
+        &:last-child{
+            background-color: $secondary-color;
+            color: $secondary-color-contrast;
+            margin-right: 0rem;
+        }
+    }
+}
