@@ -1,4 +1,4 @@
 <div class="container">
-    <button mat-button class="request-list-button"  routerLink="/requests">View requests</button>
+    <button mat-button class="new-request-button" (click)="openDialog()" >new request</button>
     <app-generic-grid [refreshTrigger]="refreshTableTrigger"></app-generic-grid>
 </div>

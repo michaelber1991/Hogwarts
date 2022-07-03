@@ -1,11 +1,10 @@
-@import "../../../styles.scss";
+@import "../../../../styles.scss";
 
 .container{
     padding: $section-container-padding;
-    .request-list-button {
+    .new-request-button {
         margin-bottom: 1rem;
         background-color: $main-color;
         color: $main-color-contrast;
     }
 }
-
